@@ -1986,7 +1986,7 @@ blockquote {
   margin-right: 30px;
   border-radius: 34px;
   background-color: #1e2c29;
-  color: #e7e7e7;
+  color: #1e2c29;
 }
 
 .slide.light-background {
@@ -2015,7 +2015,7 @@ blockquote {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background-color: #283230;
+  background-color: #FF9B10;
 }
 
 .slider-content-block.slider-content-light {

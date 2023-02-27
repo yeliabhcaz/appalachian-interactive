@@ -267,7 +267,7 @@ blockquote {
   right: 0%;
   bottom: auto;
   border-radius: 10px;
-  background-color: #1e2c29;
+  background-color: white;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
@@ -280,6 +280,7 @@ blockquote {
   display: -ms-flexbox;
   display: flex;
   padding-top: 100px;
+  margin-top: 5.3rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -685,7 +686,7 @@ blockquote {
 .link-block {
   -webkit-transition: color 400ms ease;
   transition: color 400ms ease;
-  color: #f1f1f1;
+  color: #1E2C29;
   font-size: 18px;
   font-weight: 400;
   text-align: center;
@@ -1584,6 +1585,20 @@ blockquote {
   top: 0%;
   right: 0%;
   bottom: 0%;
+  width: 200px;
+  height: 75px;
+  object-fit: contain;
+}
+
+.white-logo {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 200px;
+    height: 75px;
+    object-fit: contain; 
 }
 
 .circle-image {
@@ -3467,6 +3482,8 @@ blockquote {
 
 .brand-link.w--current {
   padding-left: 0px;
+  width: 200px;
+  height: 75px;
 }
 
 .azwedo {
@@ -3658,6 +3675,7 @@ blockquote {
 
 .fixed-navbar {
   position: fixed;
+  padding: 10px 0 0 0;
   left: 24px;
   top: 24px;
   right: 24px;
@@ -4333,7 +4351,6 @@ blockquote {
 .button-5 {
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 85px;
   padding: 15px 50px;
   background-color: #ff9b10;
   font-size: 20px;
@@ -4403,7 +4420,7 @@ blockquote {
   }
 
   .nav-menu-container {
-    position: static;
+    position: relative;
   }
 
   .hero-section {
@@ -4416,10 +4433,6 @@ blockquote {
 
   .footer-block.new-section-2 {
     padding-top: 60px;
-  }
-
-  .footer-block.new-section {
-    margin-top: 60px;
   }
 
   .grid-2-columns.bg-color {
@@ -4458,7 +4471,6 @@ blockquote {
   .button-5 {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 85px;
     padding: 15px 50px;
     background-color: #ff9b10;
     font-size: 20px;
@@ -4623,7 +4635,6 @@ blockquote {
   .button-5 {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 80px;
     padding: 15px 50px;
     border-radius: 4px;
     background-color: #ff9b10;
@@ -4697,7 +4708,6 @@ blockquote {
   }
 
   .button-5 {
-    margin-left: 315px;
     padding-top: 25px;
     padding-bottom: 25px;
   }
@@ -4904,7 +4914,6 @@ blockquote {
   }
 
   .footer-block.new-section {
-    margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 0px;
   }
@@ -5247,7 +5256,6 @@ blockquote {
   }
 
   .button-5 {
-    margin-left: 25px;
     padding-right: 30px;
     padding-left: 30px;
   }

@@ -1,0 +1,8 @@
+1. remove loading delay
+3. add blog posts
+5. realign content in footer
+6. adjust statistics on about us page
+7. wire up form
+8. integrate app-int email into mail app on laptop and phone
+9. create equal padding on above-fold
+

@@ -1002,13 +1002,13 @@ textarea.w-select {
 }
 .w-slider-dot {
   position: relative;
-  display: inline-block;
   width: 1em;
   height: 1em;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #1E2C29;
   cursor: pointer;
   margin: 0 3px 0.5em;
   transition: background-color 100ms, color 100ms;
+  display: none;
 }
 .w-slider-dot.w-active {
   background-color: #fff;
@@ -1040,6 +1040,13 @@ textarea.w-select {
   -ms-user-select: none;
   user-select: none;
 }
+
+@media only screen and (max-width: 1280px) {
+  .w-slider-dot {
+    display: inline-block;
+  }
+}
+
 .w-slider-arrow-left [class^='w-icon-'],
 .w-slider-arrow-right [class^='w-icon-'],
 .w-slider-arrow-left [class*=' w-icon-'],

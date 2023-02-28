@@ -5933,6 +5933,10 @@ blockquote {
     padding-left: 0px;
   }
 
+  .hero-section {
+    padding-top: 60px;
+  }
+
   .section.hero-about {
     height: 195vh;
   }

@@ -4743,6 +4743,7 @@ blockquote {
 }
 
 @media screen and (min-width: 1920px) {
+  
   .section.dark-slate-grey-bg {
     border-top-width: 1px;
     border-top-color: #283230;
@@ -4752,14 +4753,9 @@ blockquote {
     height: 130vh;
   }
 
-  .hero-section.contact-hero-section {
-    background-color: #e7e7e7;
-  }
-
   .fade-in-move-on-scroll {
     padding-top: 5px;
     padding-left: 5px;
-    border: 1px solid #000;
   }
 
   .fade-in-move-on-scroll.form-submit {

@@ -1,5 +1,5 @@
 3. add blog posts
 6. adjust statistics on about us page
 7. wire up form
-8. fix about page after removing preloader
-9. fix blog page after removing preloader
+8. browser tabs blog about and contact page
+9. fix delayed load on blog images, is it set to lazy?

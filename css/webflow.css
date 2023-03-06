@@ -1041,7 +1041,7 @@ textarea.w-select {
   user-select: none;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1460px) {
   .w-slider-dot {
     display: inline-block;
   }

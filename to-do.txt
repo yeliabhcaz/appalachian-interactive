@@ -1,4 +1,3 @@
-6. adjust statistics on about us page
-7. wire up form
-8. browser tabs blog about and contact page
-9. fix delayed load on blog images, is it set to lazy?
+1. fix about page
+2. add blog post readable pages
+3. fix slugs

@@ -1,4 +1,4 @@
-.w-layout-grid {
+/* .w-layout-grid {
   display: -ms-grid;
   display: grid;
   grid-auto-columns: 1fr;
@@ -8,6 +8,51 @@
   grid-template-rows: auto auto;
   grid-row-gap: 16px;
   grid-column-gap: 16px;
+} */
+
+.w-layout-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.core-values-content-holder {
+  min-width: 300px;
+  max-width: 40%;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.core-values-content-holder:hover {
+  transform: translateY(5px);
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+.about-quote {
+  color: #1E2C29;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.about-text {
+  color: #1E2C29;
+}
+
+.hero-section.hero-about {
+  margin: 0;
+  padding: 0;
+}
+
+.section.hero-about {
+  height: auto;
+}
+
+.page-load-move-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 body {
@@ -17,6 +62,7 @@ body {
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;
+  height: auto;
 }
 
 h1 {
@@ -143,7 +189,7 @@ blockquote {
 }
 
 .section.hero-about {
-  height: 160vh;
+  height: auto;
 }
 
 .section.white-section {
@@ -434,6 +480,7 @@ blockquote {
 .post:hover {
   transform: translateY(5px);
   box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  cursor: pointer;
 }
 
 .post-img {
@@ -4743,14 +4790,14 @@ blockquote {
 }
 
 @media screen and (min-width: 1920px) {
-  
+
   .section.dark-slate-grey-bg {
     border-top-width: 1px;
     border-top-color: #283230;
   }
 
   .section.hero-about {
-    height: 130vh;
+    height: auto;
   }
 
   .fade-in-move-on-scroll {
@@ -4824,7 +4871,7 @@ blockquote {
   }
 
   .section.hero-about {
-    height: 155vh;
+    height: auto;
   }
 
   .section.negative-margin {
@@ -5024,7 +5071,7 @@ blockquote {
   }
 
   .hero-paragraph {
-    width: 70%;
+    width: 90%;
   }
 
   .hero-section-block-holder.project-hero {
@@ -5382,7 +5429,6 @@ blockquote {
   }
 
   .hero-section-block-holder {
-    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -5408,10 +5454,6 @@ blockquote {
     padding: 0px;
   }
 
-  .section.hero-about {
-    height: 145vh;
-  }
-
   .section.negative-margin {
     position: static;
   }
@@ -5426,7 +5468,7 @@ blockquote {
   }
 
   .hero-section.hero-about {
-    height: 140vh;
+    height: auto;
   }
 
   .hero-section.contact-hero-section {
@@ -6009,7 +6051,7 @@ blockquote {
   }
 
   .section.hero-about {
-    height: 195vh;
+    height: auto;
   }
 
   .section.negative-margin {

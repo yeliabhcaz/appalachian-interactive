@@ -55,35 +55,43 @@
   </div>
   <div id="blog" class="section">
     <h1 id='blog-page-title'>Posts</h1>
+    <hr>
     <div id="posts-ctr">
       <script>
         const POSTS = [
       {
           image: 'images/why-do-i-need-a-website-img.jpg',
           title: 'Why Do I Need A Website?',
-          desc: 'Having a website for your small business helps you reach customers outside of your local area, provides credibility to your business, and opens up new and innovative ways to interact with your clients'
+          desc: 'Having a website for your small business helps you reach customers outside of your local area, provides credibility to your business, and opens up new and innovative ways to interact with your clients',
+          url: 'blog-posts/why-do-I-need-a-website.html'
       },
       {
           image: 'images/seo-small-biz-owners-best-friend.jpg',
-          title: 'SEO: Small Business Owners Best Friend',
-          desc: 'Having a website for your small business helps you reach customers outside of your local area, provides credibility to your business, and opens up new and innovative ways to interact with your clients'
-
+          title: 'SEO: Your Small Business\'s Best Friend',
+          desc: 'Your customers are asking Google questions about your product or their problem with a proper SEO strategy you\'ll be the one answering them',
+          url: 'blog-posts/SEO-Small-Business-Owners-Best-Friend.html'
       },
       {
           image: 'images/googles-digital-tools-img.jpg',
           title: "How Google's Digital Tools Can Help You Crush Your Growth Goals",
-          desc: 'Having a website for your small business helps you reach customers outside of your local area, provides credibility to your business, and opens up new and innovative ways to interact with your clients'
+          desc: 'Google has a vested interest in the growth of the internet, and in turn the growth of your online business! To foster that growth they\'ve released a suite of tools to save you both time and money',
+          url: 'blog-posts/How-Googles-Digital-Tools-Can-Help-You-Crush-Your-Growth-Goals.html'
       },
       {
           image: 'images/why-not-blogging-is-hurting-your-small-business-img.jpg',
           title: 'Why Not Blogging is Hurting Your Small Business',
-          desc: 'Having a website for your small business helps you reach customers outside of your local area, provides credibility to your business, and opens up new and innovative ways to interact with your clients'
+          desc: 'Blog posts are your way to communicate with your clients online. Whether you\'re trying to establish domain expertise or just answer a question for a potential customer, blogging is a must for any small business.',
+          url: 'blog-posts/Why-Not-Blogging-Is-Hurting-Your-Business.html'
       },
   ]
         let blog = document.getElementById('posts-ctr');
         POSTS.map(post => {
           let div = document.createElement('div');
           div.classList.add('post');
+          let urlLink = document.createElement('a');
+          urlLink.href = post.url
+          urlLink.classList.add('post-link')
+          div.appendChild(urlLink)
           let textDiv = document.createElement('div')
           textDiv.classList.add('text-div');
           let coverImg = document.createElement('img');
@@ -104,6 +112,7 @@
 
       </script>
     </div>
+    <div class="decor-vector-block-holder hero-decor-vector about-bg"><img src="images/Yellow-Vector.svg" loading="lazy" alt="" class="white-vector-image"></div>
   </div>
   <div class="footer">
     <div class="w-layout-grid grid-2-columns bg-color">
@@ -140,6 +149,53 @@
         </div>
       </div>
     </div>
+    <div class="slider-container slider-blog">
+      <h2 id="services-header" >Your Full-Service Digital Partner</h2>
+      <div class="slider-white-bg">
+        <div data-w-id="f20c617c-7b65-43aa-c475-8b99fe658320" class="white-grey-line-holder"><img src="images/Grey-Line.svg" loading="lazy" alt="" class="slider-decor"></div>
+      </div>
+      <div class="container hero-ctr">
+        <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-w-id="ddb902f2-fef0-15ed-ceef-d2d9849dfce3" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
+          <div class="mask w-slider-mask ">
+            <div class="slide w-slide">
+              <div class="slider-content-block"><img src="images/Slider-Icon.svg" loading="lazy" alt="" class="slide-icon">
+                <h3 class="service-header">Design</h3>
+                <p>Your website is a statement about your business— it connects you to the world! Our team will work tirelessly to build your online brand until it screams to your ideal audience.</p>
+              </div>
+            </div>
+            <div class="slide light-background w-slide">
+              <div class="slider-content-block slider-content-light"><img src="images/Untitled_design-removebg-preview.png" loading="lazy" sizes="(max-width: 1279px) 44px, (max-width: 1439px) 3vw, 44px" srcset="images/Untitled_design-removebg-preview-p-500.png 500w, images/Untitled_design-removebg-preview.png 500w" alt="" class="slide-icon">
+                <h3 class="heading-3 service-header">Development</h3>
+                <p>Our core business is building websites. Whether you need a simple two-pager to help customers find you or you have dozens of pages of information to organize, we will exceed your expectations!</p>
+              </div>
+            </div>
+            <div class="slide w-slide">
+              <div class="slider-content-block"><img src="images/seo.png" loading="lazy" alt="" class="slide-icon">
+                <h3 class="heading-4 service-header">Search Engine Optimization</h3>
+                <p class="paragraph-2">In simple terms, SEO optimizes your visibility online by helping you appear in Google Searches. The more people who see your website, the more your traffic increases, and the better your chances of finding your next customer</p>
+              </div>
+            </div>
+            <div class="slide light-background w-slide">
+              <div class="slider-content-block slider-content-light"><img src="images/Untitled_design__1_-removebg-preview.png" loading="lazy" sizes="(max-width: 1279px) 44px, (max-width: 1439px) 3vw, 44px" srcset="images/Untitled_design__1_-removebg-preview-p-500.png 500w, images/Untitled_design__1_-removebg-preview.png 500w" alt="" class="slide-icon">
+                <h3 class="heading-5 service-header">Online Brand Management</h3>
+                <p class="paragraph-3">Maintaining a conversation with your customers will increase brand loyalty and repeat customers. Our experts help you craft riveting social media posts and handle all Google Reviews so you can spend more time on your business</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-nav w-slider-nav w-round">
+            <div class="slider-arrow slider-arrow-left w-slider-arrow-left">
+              <img src="images/Slider-Right-Arrow.svg" loading="lazy" alt="" class="slider-arrow-image">
+              <img src="images/Orange-Arrow.svg" loading="lazy" alt="" class="slider-arrow-image slider-arrow-image-active">
+            </div>
+            <div class="slider-arrow w-slider-arrow-right">
+              <img src="images/Slider-Right-Arrow.svg" loading="lazy" alt="" class="slider-arrow-image">
+              <img src="images/Orange-Arrow.svg" loading="lazy" alt="" class="slider-arrow-image slider-arrow-image-active">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     <div class="container footer-container">
       <div class="w-layout-grid top-footer-grid">
         <div id="w-node-_95364c5c-05c8-cc69-448c-56f324a82f2c-0a144c54" class="footer-block">

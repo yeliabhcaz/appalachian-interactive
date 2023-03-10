@@ -1,5 +1,3 @@
 2. add blog post readable pages
 3. fix slugs
 5. 404 page
-6. add mountains to blog page 
-7. add services back to bottom of blog page

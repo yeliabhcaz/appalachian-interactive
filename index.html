@@ -166,50 +166,57 @@
       <div class="blog-posts-content-holder">
         <div id="home-posts-ctr">
           <script>
-            const POSTS = [
-          {
-              image: 'images/why-do-i-need-a-website-img.jpg',
-              title: 'Why Do I Need A Website?',
-              desc: 'Having a website for your small business helps you reach customers outside of your local area, provides credibility to your business, and opens up new and innovative ways to interact with your clients'
-          },
-          {
-              image: 'images/seo-small-biz-owners-best-friend.jpg',
-              title: 'SEO: Small Business Owners Best Friend',
-              desc: 'Having a website for your small business helps you reach customers outside of your local area, provides credibility to your business, and opens up new and innovative ways to interact with your clients'
-    
-          },
-          {
-              image: 'images/googles-digital-tools-img.jpg',
-              title: "How Google's Digital Tools Can Help You Crush Your Growth Goals",
-              desc: 'Having a website for your small business helps you reach customers outside of your local area, provides credibility to your business, and opens up new and innovative ways to interact with your clients'
-          },
-          {
-              image: 'images/why-not-blogging-is-hurting-your-small-business-img.jpg',
-              title: 'Why Not Blogging is Hurting Your Small Business',
-              desc: 'Having a website for your small business helps you reach customers outside of your local area, provides credibility to your business, and opens up new and innovative ways to interact with your clients'
-          },
-      ]
+              const POSTS = [
+                {
+                    image: 'images/why-do-i-need-a-website-img.jpg',
+                    title: 'Why Do I Need A Website?',
+                    desc: 'Having a website for your small business helps you reach customers outside of your local area, provides credibility to your business, and opens up new and innovative ways to interact with your clients',
+                    url: 'blog-posts/why-do-I-need-a-website.html'
+                },
+                {
+                    image: 'images/seo-small-biz-owners-best-friend.jpg',
+                    title: 'SEO: Your Small Business\'s Best Friend',
+                    desc: 'Your customers are asking Google questions about your product or their problem with a proper SEO strategy you\'ll be the one answering them',
+                    url: 'blog-posts/SEO-Small-Business-Owners-Best-Friend.html'
+                },
+                {
+                    image: 'images/googles-digital-tools-img.jpg',
+                    title: "How Google's Digital Tools Can Help You Crush Your Growth Goals",
+                    desc: 'Google has a vested interest in the growth of the internet, and in turn the growth of your online business! To foster that growth they\'ve released a suite of tools to save you both time and money',
+                    url: 'blog-posts/How-Googles-Digital-Tools-Can-Help-You-Crush-Your-Growth-Goals.html'
+                },
+                {
+                    image: 'images/why-not-blogging-is-hurting-your-small-business-img.jpg',
+                    title: 'Why Not Blogging is Hurting Your Small Business',
+                    desc: 'Blog posts are your way to communicate with your clients online. Whether you\'re trying to establish domain expertise or just answer a question for a potential customer, blogging is a must for any small business.',
+                    url: 'blog-posts/Why-Not-Blogging-Is-Hurting-Your-Business.html'
+                },
+              ]
             let blog = document.getElementById('home-posts-ctr');
-            POSTS.map(post => {
-              let div = document.createElement('div');
-              div.classList.add('home-post');
-              let textDiv = document.createElement('div')
-              textDiv.classList.add('text-div');
-              let coverImg = document.createElement('img');
-              coverImg.src = post.image;
-              coverImg.classList.add('post-img');
-              div.appendChild(coverImg)
-              let title = document.createElement('h2');
-              title.textContent = post.title
-              title.classList.add('post-title');
-              textDiv.appendChild(title)
-              let desc = document.createElement('p');
-              desc.textContent = post.desc;
-              desc.classList.add('post-desc');
-              textDiv.appendChild(desc);
-              div.appendChild(textDiv)
-              blog.appendChild(div);
-            })
+        POSTS.map(post => {
+          let div = document.createElement('div');
+          div.classList.add('home-post');
+          let urlLink = document.createElement('a');
+          urlLink.href = post.url
+          urlLink.classList.add('post-link')
+          div.appendChild(urlLink)
+          let textDiv = document.createElement('div')
+          textDiv.classList.add('text-div');
+          let coverImg = document.createElement('img');
+          coverImg.src = post.image;
+          coverImg.classList.add('post-img');
+          div.appendChild(coverImg)
+          let title = document.createElement('h2');
+          title.textContent = post.title
+          title.classList.add('post-title');
+          textDiv.appendChild(title)
+          let desc = document.createElement('p');
+          desc.textContent = post.desc;
+          desc.classList.add('post-desc');
+          textDiv.appendChild(desc);
+          div.appendChild(textDiv)
+          blog.appendChild(div);
+        })
     
           </script>
         </div>

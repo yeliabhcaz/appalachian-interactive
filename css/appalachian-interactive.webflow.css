@@ -18,6 +18,32 @@
   background: white;
 }
 
+#home-posts-ctr {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
+  padding-left: 12%;
+}
+
+.home-post {
+  height: auto;
+  max-height: 475px;
+  width: 30%;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  background: white;
+  border-radius: 10px;
+}
+
+.home-post:hover {
+  transform: translateY(5px);
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
 
 .w-layout-grid {
   display: flex;
@@ -2412,17 +2438,10 @@ blockquote {
 }
 
 .blog-posts-content-holder {
-  display: -ms-grid;
-  display: grid;
+  display: flex;
   margin-top: 4em;
   margin-bottom: 4em;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
+  flex-direction: row-reverse;
 }
 
 .blog-item-link {
@@ -4249,8 +4268,7 @@ blockquote {
 .blog-posts-header-block-holder {
   position: -webkit-sticky;
   position: sticky;
-  top: 140px;
-  padding-left: 25px;
+  margin-top: 15%;
 }
 
 .unsplash {
@@ -4657,7 +4675,14 @@ blockquote {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1550px) {
+  #home-posts-ctr {
+    padding-left: 0;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {  
   .section {
     display: block;
     overflow: visible;
@@ -5754,8 +5779,8 @@ blockquote {
   }
 
   .blog-posts-content-holder {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    flex-direction: column-reverse;
+    margin-top: 0;
   }
 
   .projects-category-block-holder {
@@ -6430,12 +6455,13 @@ blockquote {
   }
 
   .blog-posts-content-holder {
-    margin-top: 2em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .button-5.w-button {
+    margin-bottom: 100px;
   }
 
   .projects-category-block-holder {

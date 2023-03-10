@@ -164,22 +164,54 @@
   <div id="blog" class="section dark-slate-grey-bg negative-z-index">
     <div class="container hero-ctr">
       <div class="blog-posts-content-holder">
-        <div id="w-node-ca88064a-9599-6d16-6155-fbfdc401c87a-a646aa2d" class="collection-list-wrapper w-dyn-list">
-          <div role="list" class="collection-list w-dyn-items">
-            <div role="listitem" class="w-dyn-item">
-              <div class="blog-post-block-holder">
-                <a href="#" class="blog-item-link w-inline-block">
-                  <div class="blog-item-image-holder"><img src="" loading="lazy" alt="" class="blog-item-image"></div>
-                  <div class="blog-item-category"></div>
-                  <h4 class="heading-inter-font"></h4>
-                  <div class="blog-item-date"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="w-dyn-empty">
-            <div>No items found.</div>
-          </div>
+        <div id="home-posts-ctr">
+          <script>
+            const POSTS = [
+          {
+              image: 'images/why-do-i-need-a-website-img.jpg',
+              title: 'Why Do I Need A Website?',
+              desc: 'Having a website for your small business helps you reach customers outside of your local area, provides credibility to your business, and opens up new and innovative ways to interact with your clients'
+          },
+          {
+              image: 'images/seo-small-biz-owners-best-friend.jpg',
+              title: 'SEO: Small Business Owners Best Friend',
+              desc: 'Having a website for your small business helps you reach customers outside of your local area, provides credibility to your business, and opens up new and innovative ways to interact with your clients'
+    
+          },
+          {
+              image: 'images/googles-digital-tools-img.jpg',
+              title: "How Google's Digital Tools Can Help You Crush Your Growth Goals",
+              desc: 'Having a website for your small business helps you reach customers outside of your local area, provides credibility to your business, and opens up new and innovative ways to interact with your clients'
+          },
+          {
+              image: 'images/why-not-blogging-is-hurting-your-small-business-img.jpg',
+              title: 'Why Not Blogging is Hurting Your Small Business',
+              desc: 'Having a website for your small business helps you reach customers outside of your local area, provides credibility to your business, and opens up new and innovative ways to interact with your clients'
+          },
+      ]
+            let blog = document.getElementById('home-posts-ctr');
+            POSTS.map(post => {
+              let div = document.createElement('div');
+              div.classList.add('home-post');
+              let textDiv = document.createElement('div')
+              textDiv.classList.add('text-div');
+              let coverImg = document.createElement('img');
+              coverImg.src = post.image;
+              coverImg.classList.add('post-img');
+              div.appendChild(coverImg)
+              let title = document.createElement('h2');
+              title.textContent = post.title
+              title.classList.add('post-title');
+              textDiv.appendChild(title)
+              let desc = document.createElement('p');
+              desc.textContent = post.desc;
+              desc.classList.add('post-desc');
+              textDiv.appendChild(desc);
+              div.appendChild(textDiv)
+              blog.appendChild(div);
+            })
+    
+          </script>
         </div>
         <div class="blog-posts-header-block-holder">
           <h1 class="blog-posts-header white-text">We&#x27;re nothing if not true to our word. </h1>

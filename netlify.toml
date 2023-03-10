@@ -1,0 +1,4 @@
+from = /index.html   to =  / status = 302
+from = /about.html   to =  /about status = 302
+from = /blog.html   to =  /blog status = 302
+from = /contact.html   to =  /contact status = 302

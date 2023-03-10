@@ -10,6 +10,15 @@
   grid-column-gap: 16px;
 } */
 
+#about-bg-2 {
+  top: 200%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  z-index: 0;
+  background: white;
+}
+
+
 .w-layout-grid {
   display: flex;
   flex-wrap: wrap;
@@ -257,6 +266,7 @@ blockquote {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  background: #1e2c29;
 }
 
 .container.contact-container {
@@ -272,6 +282,7 @@ blockquote {
 .container.about-ctr {
   border-radius: 25px;
   background-color: #1e2c29;
+  z-index: 1;
 }
 
 .nav-menu-container {
@@ -6264,6 +6275,10 @@ blockquote {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
+  }
+
+  .decor-vector-block-holder.hero-decor-vector {
+    top: 25%;
   }
 
   .white-vector-image {

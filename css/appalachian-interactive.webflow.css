@@ -10,6 +10,15 @@
   grid-column-gap: 16px;
 } */
 
+#four-o-four-button {
+  background: white;
+  color: #1e2c29;
+}
+
+#four-o-four-header {
+  color: white;
+}
+
 #about-bg-2 {
   top: 200%;
   -webkit-transform: scaleX(-1);
@@ -106,7 +115,7 @@
 }
 
 body {
-  background-color: #1e2c29;;
+  background-color: #1e2c29;
   font-family: Cabin, sans-serif;
   color: #283230;
   font-size: 16px;
